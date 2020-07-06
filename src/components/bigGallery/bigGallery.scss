@@ -1,0 +1,90 @@
+
+.bigGalleryWrap{
+    // width: 90%;
+    overflow: hidden;
+    max-width: 1300px;
+    min-width: 300px;
+    max-height: 700px;
+    min-height: 200px;
+    position: absolute;
+    z-index: 8;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    
+}
+
+.round{
+    margin: 0 5px;
+    border: 2px solid black;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .2;
+
+    i{
+        font-size: 30px;
+    }
+    transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -ms-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+
+
+}
+
+.round:hover{
+    opacity: .8;
+}
+
+.controlsWrap{
+    position: absolute;
+    z-index: 9;
+    margin: 10px auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+
+    
+
+
+}
+
+.counter{
+    text-align: center;
+
+    h3{
+        color: black;
+        opacity: .4;
+        font-size: 30px;
+    }
+}
+
+@media screen and(max-width: 576px){
+    .bigGalleryWrap{
+        max-height: 400px;
+    }
+}

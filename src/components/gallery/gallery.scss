@@ -28,6 +28,12 @@
 
 }
 
+.fullGallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 
 .galleryItem{
     cursor: pointer;

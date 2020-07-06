@@ -15,12 +15,15 @@ export const TestTask = () =>{
         let string = str.slice(on, of)
 
         const strArr = string.split('')
-        const strArrFilter = strArr.filter((item)=> item !== 'p' && item !== '>' && item !== '<' && item !== '/')
+        const strArrFilter = strArr.filter((item)=> item !== 'p' && item !== '>' && item !== '<' && item !== '/').join('').split(' ').map((item, i)=>{
+            if(item === 'styled-comonents.'){item = 'scss или less'}
+            return item
+        })
         
 
         return (
             <p>
-               {strArrFilter.join("")} 
+               {strArrFilter.join(" ")} 
             </p>
             
             )
