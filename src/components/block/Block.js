@@ -10,7 +10,6 @@ export const Block = () =>{
     const {state} = useContext(MainContext)
 
 
-
     return(
         <div className = 'block'>
 

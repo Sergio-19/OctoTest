@@ -9,6 +9,11 @@ import { Block } from '../components/block/Block';
 import { Gallery } from '../components/gallery/Gallery';
 import { BigGallery } from '../components/bigGallery/BigGallery';
 import { Drawer } from '../components/ui/drawer/Drawer';
+import { HelloForm } from '../components/helloForm/HelloForm';
+import { Modal } from '../components/ui/modal/Modal';
+import { Hr } from '../components/ui/hr/Hr';
+import { Footer } from '../components/footer/Footer';
+
 
 
 
@@ -24,6 +29,7 @@ import { Drawer } from '../components/ui/drawer/Drawer';
 
                 {state.loading ? 
                 <Fragment>
+                    <Modal/>
                     <BigGallery/>
                     <Drawer/>
                      <Header/>
@@ -31,7 +37,11 @@ import { Drawer } from '../components/ui/drawer/Drawer';
                      <Block />
                      <Gallery />
                      <BigGallery/>
-
+                     <HelloForm/>
+                     <Hr color = '#ADADAD'/>
+                     <Footer />
+                     <Hr color = '#128ACE'/>
+                     
                 </Fragment>        
 
                      :

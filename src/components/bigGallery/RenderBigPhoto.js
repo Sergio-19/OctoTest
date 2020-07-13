@@ -12,16 +12,22 @@ const {state} = useContext(MainContext)
 
  function getRenderArr(gallery, id){
     const renderArr = []
+    let targetPhoto = ''
     for(let key of gallery){
         if(key.image === id){
+            targetPhoto = key.image
             renderArr[0] = key.image
         }else{
-          renderArr.push(key.image)  
+            if(key.image !== targetPhoto){
+                 renderArr.push(key.image)
+            }
+           
         }
         
     }
 
     return renderArr
+    
  } 
 
  const renderArr = getRenderArr(state.gallery, state.photoId)

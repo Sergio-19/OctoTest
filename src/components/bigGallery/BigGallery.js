@@ -18,7 +18,7 @@ export const BigGallery = () =>{
     }
 
     function countMinus(){
-        setValue(value <= 0 ? value : value - 1)
+        setValue(value < 1 ? value : value - 1)
        
     }
 

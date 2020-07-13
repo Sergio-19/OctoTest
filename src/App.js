@@ -5,6 +5,7 @@ import Layout from './layout/Layout';
 import {MainContext} from './context/MainContext'
 import { getMain, getWidth } from './redux/actionCreators/main';
 import { showAllPhoto, hideAllPhoto, showBigPhoto, hideBigPhoto } from './redux/actionCreators/gallery';
+import { onChangeHandler, checkHandler, textChangeHandler, sendFormHandler, clearFormHandler} from './redux/actionCreators/form';
 
 
 const width = document.body.clientWidth > 1320 ? 1320 : document.body.clientWidth
@@ -23,6 +24,8 @@ componentDidMount(){
 
 
   render(){
+
+    // console.log(this.props.formControls.email.valid)
 
       return(
 
@@ -47,7 +50,8 @@ function mapStateToProps(state){
     width: state.main.width,
     allPhoto: state.gallery.allPhoto,
     showBigPhoto: state.gallery.showBigPhoto,
-    photoId: state.gallery.photoId
+    photoId: state.gallery.photoId,
+    formControls: state.form
    
    
 
@@ -63,8 +67,12 @@ function mapDispatchToProps(dispatch){
     showAllPhoto: ()=> dispatch(showAllPhoto()),
     hideAllPhoto: ()=> dispatch(hideAllPhoto()),
     showBigPhotoHandler: (id)=> dispatch(showBigPhoto(id)),
-    hideBigPhotoHandler: ()=> dispatch(hideBigPhoto())
- 
+    hideBigPhotoHandler: ()=> dispatch(hideBigPhoto()),
+    onChangeHandler: (event, control)=> dispatch(onChangeHandler(event, control)),
+    checkHandler: ()=> dispatch(checkHandler()),
+    textChangeHandler: (event)=> dispatch(textChangeHandler(event)),
+    sendFormHandler: ()=> dispatch(sendFormHandler()),
+    clearFormHandler: ()=> dispatch(clearFormHandler())
 
   }
 }

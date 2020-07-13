@@ -1,0 +1,25 @@
+
+
+.modalWrap{
+    position: fixed;
+    z-index: 8;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+}
+
+.modalShow{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}

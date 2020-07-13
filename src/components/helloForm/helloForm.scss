@@ -1,0 +1,57 @@
+
+
+.formWrap{
+    margin-bottom: 3vw;
+    
+}
+
+.formContentWrap{
+   background-image: url(../../images/form.png);
+    background-repeat: no-repeat; 
+    padding: 12rem 0 0 15rem;
+}
+
+
+
+.formHead{
+       
+        h2{
+            font-size: 48px;
+            color: #333333;
+        }
+}
+
+.formContent{
+
+
+    
+    
+
+}
+
+.formContentImg{
+    display: none;
+}
+
+
+
+
+
+@media screen and (max-width: 768px){
+    .formContentImg{
+        display: block;
+        display: flex;
+        justify-content: center;
+    }
+    .formContentWrap{
+        background-image: none;
+        padding: 0;
+    }
+
+    .formHead{
+        text-align: center;
+        h2{
+            font-size: 30px;
+        }
+    }
+}

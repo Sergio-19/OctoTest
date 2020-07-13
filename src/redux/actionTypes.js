@@ -12,3 +12,10 @@ export const NOT_GALLERY = 'NOT_GALLERY'
 export const SHOW_BIG_PHOTO = 'SHOW_BIG_PHOTO'
 export const HIDE_BIG_PHOTO = 'HIDE_BIG_PHOTO'
 
+
+
+export const CHANGE_INPUT = 'CHANGE_INPUT'
+export const CHECK_BOX = 'CHECK_BOX'
+export const WRITE_MESSAGE = 'WRITE_MESSAGE'
+export const CLEAR_FORM = 'CLEAR_FORM'
+export const SEND_FORM = 'SEND_FORM'

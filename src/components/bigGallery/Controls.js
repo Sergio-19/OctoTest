@@ -30,9 +30,9 @@ export const Controls = (props) =>{
 
             </div>
 
-            <div className = 'counter'>
+            {/* <div className = 'counter'>
                 <h3>{props.count === state.gallery.length ? props.count : props.count + 1}/{state.gallery.length}</h3>
-            </div>
+            </div> */}
 
         </div>
         

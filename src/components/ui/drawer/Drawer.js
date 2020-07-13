@@ -9,7 +9,7 @@ export const Drawer = () =>{
 
     return(
         <div className = 'drawer'
-             style = {{display: state.showBigPhoto ? 'block' : 'none'}}   
+             style = {{display: state.showBigPhoto || state.formControls.ready ? 'block' : 'none'}}   
         ></div>
     )
 }
