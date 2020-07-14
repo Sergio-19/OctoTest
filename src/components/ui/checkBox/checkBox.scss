@@ -1,3 +1,4 @@
+@import '../../../var';
 
 
 .checkBox{
@@ -41,7 +42,7 @@
 
 .checkActive{
     
-    background: #00A4F7;
+    background: $head;
     i{
         color: #fff;
         

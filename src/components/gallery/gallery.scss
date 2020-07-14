@@ -1,4 +1,4 @@
-
+@import '../../var';
 
 .galleryWrap{
     margin-top: 40px;
@@ -9,7 +9,7 @@
 
     h2{
         font-size: 40px;
-        color: #333333;
+        color: $text;
     }
 }
 
@@ -23,15 +23,13 @@
 }
 
 .gallery{
-    display: flex;
-    justify-content: center;
+    @extend %flex_center;
 
 }
 
 .fullGallery{
-    display: flex;
+    @extend %flex_center;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 
@@ -64,11 +62,10 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: #333333;
+    background: $text;
     opacity: .7;
     z-index: 5;
-    display: flex;
-    justify-content: center;
+    @extend %flex_center;
     align-items: center;
     h3{
         color: #fff;

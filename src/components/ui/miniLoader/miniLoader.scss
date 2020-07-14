@@ -1,3 +1,5 @@
+@import '../../../var';
+
 .lds-spinner {
     color: official;
     display: inline-block;
@@ -18,7 +20,7 @@
     width: 6px;
     height: 18px;
     border-radius: 20%;
-    background: #00A4F7;
+    background: $head;
   }
   .lds-spinner div:nth-child(1) {
     transform: rotate(0deg);
@@ -79,7 +81,6 @@
 
   .miniLoader{
       width: 100%;
-      display: flex;
-      justify-content: center;
+      @extend %flex_center;
       align-items: center;
   }

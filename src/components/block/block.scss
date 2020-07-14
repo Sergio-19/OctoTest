@@ -1,4 +1,4 @@
-
+@import '../../var';
 
 .block{
     margin-top: 40px;
@@ -8,7 +8,7 @@
 
     h2{
         font-size: 40px;
-        color: #333333;
+        color: $text;
     }
 }
 

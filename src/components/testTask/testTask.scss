@@ -1,11 +1,11 @@
-
+@import '../../var';
 
 .testTask{
     margin-top: 20px;
 
     h1{
         font-size: 54px;
-        color: #333333;
+        color: $text;
     }
 
 
@@ -37,7 +37,7 @@
 
     h4{
         font-size: 18px;
-        color: #333333;
+        color: $text;
         font-weight: bold;
     }
 
@@ -56,12 +56,12 @@
             -moz-border-radius: 8px        ;
             -ms-border-radius: 8px        ;
             -o-border-radius: 8px        ;
-            color: #333333;
+            color: $text;
 }
 
     i{
         font-size: 30px;
-        color: #333333;
+        color: $text;
     }
 
     }

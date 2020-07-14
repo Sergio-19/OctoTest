@@ -1,4 +1,4 @@
-
+@import '../../var';
 
 .formWrap{
     margin-bottom: 3vw;
@@ -17,7 +17,7 @@
        
         h2{
             font-size: 48px;
-            color: #333333;
+            color: $text;
         }
 }
 
